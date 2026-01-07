@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salon Emmeline</title>
+    <title></title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- Header / Hero Section -->
     <header class="hero-section">
         <nav class="navbar">
             <div class="menu-icon"><span></span><span></span></div> <!-- Placeholder for burger -->
-            <div class="logo">Salon Emmeline</div>
-            <a href="#book" class="book-now-btn">Book Now</a>
+            <ul class="nav-links">
+                <li><a href="#services">Hoe werken jullie?</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="logo">
+                <img src="images/logo-green.png" alt="De Ruimtemannen Logo">
+            </div>
+            <a href="#contact" class="book-now-btn">Contact</a>
         </nav>
-        
+
         <div class="hero-content">
             <div class="hero-text">
-                <h1>Welcome to Salon Emmeline</h1>
+                <h1>Welkom bij De Ruimtemannen</h1>
                 <div class="hero-info">
-                    <p>Tue - Sun</p>
-                    <p>9am - 7pm</p>
-                    <p>123 Fake St, City 12345</p>
+                    <p>Ma - Vrij</p>
+                    <p>09.00 - 18.00</p>
+                    <p>Muiderberg</p>
                 </div>
             </div>
             <div class="hero-image-container">
-                <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=2069&auto=format&fit=crop" alt="Hairstylist styling hair" class="hero-img arched">
+                <img src="images/header-main-v3.jpg" alt="Hairstylist styling hair" class="hero-img arched">
             </div>
         </div>
     </header>
@@ -38,106 +48,126 @@
     <section class="intro-section">
         <div class="intro-content">
             <div class="intro-image">
-                <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?q=80&w=1974&auto=format&fit=crop" alt="Woman with curly hair">
+                <img src="images/intro-image.png" alt="Intro display image">
             </div>
             <div class="intro-text">
-                <h2>A fresh take on hair</h2>
-                <p>We believe in sustainable beauty. Our salon uses eco-friendly products and techniques to ensure your hair looks great while caring for the planet. Experience personalized styling in a relaxing atmosphere.</p>
-                <a href="#about" class="btn-black">Read Our Story</a>
+                <h2>Inbouwwerk op maat. Waar dan ook, hoe dan ook.</h2>
+                <p>Wij geloven dat maatwerk in het interieur meer is dan alleen functioneel. Of het nu gaat om kasten,
+                    wandmeubels, nisoplossingen of ander inbouwwerk in je woon- of slaapkamer. Een combinatie van kleur
+                    en hout, twee contrasterende tinten, of juist een rustige, volledig houten uitstraling.
+                    Hoe dan ook draait het bij ons om precisie en kwaliteit. We werken met hoogwaardige materialen, het
+                    beste meubelbeslag en werken met eenoog voor detail. Millimeterwerk, strak ingepast en tot in de
+                    puntjes afgewerkt
+                    — precies zoals maatwerk bedoeld is.</p>
+                <a href="#about" class="btn-black">Contact</a>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section class="services-section">
+    <section class="services-section" id="services">
         <div class="section-header">
-            <h3>Our services</h3>
+            <h3>Hoe werken jullie?</h3>
         </div>
         <div class="services-grid">
             <div class="service-card">
-                <h4>Haircuts & Styling</h4>
-                <div class="service-img-placeholder"></div> <!-- Specific styling if image needed behind -->
-                <a href="#book" class="btn-pill">Book now</a>
-            </div>
-            <div class="service-card">
-                <h4>Color Correction</h4>
-                <div class="service-img-placeholder"></div>
-                <a href="#book" class="btn-pill">Book now</a>
+                <h4>1: Intake</h4>
+                <div class="service-img-placeholder">
+                    <p>We horen graag wat de wensen en verwachtingen zijn. Dit doen we het liefst op locatie. We geven
+                        een kostenschatting. </p>
+                    <h5>2:Inmeten</h5>
+                    <p>We meten alles op, en bereiden alles voor, vragen om details zoals materialen en afwerking.</p>
+                </div> <!-- Specific styling if image needed behind -->
+
             </div>
             <div class="service-card image-card">
-                <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=2069&auto=format&fit=crop" alt="Model portrait">
+                <img src="images/sketchup-design.png" alt="Sketchup design corner unit">
+            </div>
+            <div class="service-card image-card">
+                <img src="images/process-image.png" alt="Process working image">
             </div>
             <div class="service-card">
-                <h4>Hair Treatments</h4>
-                <div class="service-img-placeholder"></div>
-                <a href="#book" class="btn-pill">Book now</a>
+                <h4>3: Constructie, afwerking. </h4>
+                <div class="service-img-placeholder">
+                    <p>We hebben alles lokaal op maat gezaagd, en komen de kast in elkaar zetten, en schilderen wanneer
+                        gewenst.</p>
+                </div>
+
             </div>
         </div>
-    </section>
-
-    <!-- Full Width Banner -->
-    <section class="banner-section">
-        <img src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?q=80&w=2070&auto=format&fit=crop" alt="Woman lying in grass nature">
     </section>
 
     <!-- Gallery / Aesthetic Section -->
     <section class="gallery-section">
-        <div class="gallery-item item-1">
-             <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=2069&auto=format&fit=crop" alt="Aesthetic portrait" class="flower-shape-clip">
-             <p class="gallery-caption">Natural & Sustainable</p>
-        </div>
-        <div class="gallery-item item-2">
-            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=2064&auto=format&fit=crop" alt="Salon interior">
-            <p class="gallery-caption">Relaxing environment</p>
+        <div class="gallery-container">
+            <div class="gallery-item item-1">
+                <img src="images/gallery-natural.png" alt="Aesthetic portrait" class="flower-shape-clip">
+                <p class="gallery-caption">Creatieve ideeën
+                <nav></nav>
+                </p>
+            </div>
+            <div class="gallery-item item-2">
+                <img src="images/gallery-relaxing.png" alt="Salon interior">
+                <p class="gallery-caption">Vakmanschap</p>
+            </div>
         </div>
     </section>
 
     <!-- Subscribe Section -->
     <section class="subscribe-section">
-        <h2>Subscribe</h2>
-        <p>Sign up to our news and get updates.</p>
+        <h2>Graag alles weten over wat we maken?</h2>
+        <p>We laten alleen onze mooiste resultaten zien. Geen vervelende spam.</p>
         <form class="subscribe-form">
             <input type="email" placeholder="Email Address">
-            <button type="submit">Sign Up</button>
+            <button type="submit">Schrijf je in</button>
         </form>
     </section>
 
     <!-- Bottom Image Grid -->
     <section class="bottom-grid">
-        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop" alt="Portrait">
-        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop" alt="Mirror">
-        <img src="https://images.unsplash.com/photo-1582095133179-bfd08e2fc6b3?q=80&w=2070&auto=format&fit=crop" alt="Back of head">
-        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop" alt="Portrait smiling">
+        <img src="images/cabinet-outer-1.png" alt="Custom plywood cabinet">
+        <img src="images/anielson.jpg" alt="Anielson">
+        <img src="images/reinoud-v2.png" alt="Reinoud">
+        <img src="images/cabinet-outer-right-v2.png" alt="Modern wooden wardrobe">
     </section>
 
     <!-- Footer -->
     <footer class="site-footer">
         <div class="footer-marquee">
-            <span>See you soon &nbsp; See you soon &nbsp; See you soon</span>
+            <span>Tot snel! &nbsp;
         </div>
-        
-        <div class="footer-cta">
-            <a href="#book" class="btn-black-large">Book appointment</a>
+
+        <div class="footer-cta" id="contact">
+            <a href="#book" class="btn-black-large">Neem contact met ons op</a>
+            <form class="contact-form">
+                <input type="text" placeholder="Naam" required>
+                <input type="tel" placeholder="Telefoonnummer">
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Waar kunnen we je mee helpen?" rows="4"></textarea>
+                <button type="submit">Verstuur</button>
+            </form>
         </div>
 
         <div class="footer-links">
             <div class="footer-col">
                 <h5>Socials</h5>
                 <a href="#">Instagram</a>
-                <a href="#">Facebook</a>
+
             </div>
             <div class="footer-col">
-                <h5>Hours</h5>
-                <p>Tue - Fri: 9am - 8pm</p>
-                <p>Sat - Sun: 10am - 6pm</p>
+                <h5>We zijn bereikbaar van</h5>
+                <p>ma - vrij: 09.00 - 18.00</p>
+                <p>zat - zon: op afspraak</p>
             </div>
             <div class="footer-col">
                 <h5>Contact</h5>
-                <p>hello@salonemmeline.com</p>
-                <p>123-456-7890</p>
+                <p>hello@deruimtemannen.nl</p>
+                <p>0655778766</p>
             </div>
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
+
 </html>
