@@ -105,8 +105,8 @@ a:hover {
     min-height: 90vh;
     display: flex;
     flex-direction: column;
-    padding-top: 100px;
-    /* Account for fixed header */
+    padding-top: 160px;
+    /* Account for fixed header with larger logo */
 }
 
 .navbar {
@@ -272,7 +272,7 @@ a:hover {
     .hero-section {
         min-height: 100vh;
         /* Use full height on desktop for better centering */
-        padding-top: 180px;
+        padding-top: 220px;
         /* Increased from default 100px to clear larger logo/menu */
         padding-bottom: 4rem;
     }
