@@ -236,12 +236,13 @@ a:hover {
 }
 
 .hero-text h1 {
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     line-height: 1.1;
     margin-bottom: 2rem;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 5px;
 }
 
 .hero-info {
@@ -306,6 +307,7 @@ a:hover {
         text-align: left;
         font-size: 4.5rem;
         margin-bottom: 0;
+        padding: 0;
         /* Let gap handle spacing */
     }
 
