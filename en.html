@@ -119,8 +119,12 @@
     <section class="subscribe-section">
         <h2>Want to know everything about what we make?</h2>
         <p>We only show our most beautiful results. No annoying spam.</p>
-        <form class="subscribe-form">
-            <input type="email" placeholder="Email Address">
+        <form class="subscribe-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="de5eb819-1722-4add-b52e-bf9ebe7d85de">
+            <input type="hidden" name="from_name" value="De Ruimtemannen Newsletter">
+            <input type="hidden" name="subject" value="New Newsletter Subscription">
+            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+            <input type="email" name="email" placeholder="Email Address" required>
             <button type="submit">Subscribe</button>
         </form>
     </section>
@@ -141,11 +145,15 @@
 
         <div class="footer-cta" id="contact">
             <a href="#book" class="btn-black-large">Contact us</a>
-            <form class="contact-form">
-                <input type="text" placeholder="Name" required>
-                <input type="tel" placeholder="Phone number">
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="How can we help you?" rows="4"></textarea>
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="de5eb819-1722-4add-b52e-bf9ebe7d85de">
+                <input type="hidden" name="from_name" value="De Ruimtemannen Contact Form">
+                <input type="hidden" name="subject" value="New message from website">
+                <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="tel" name="phone" placeholder="Phone number">
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="How can we help you?" required rows="4"></textarea>
                 <button type="submit">Send</button>
             </form>
         </div>

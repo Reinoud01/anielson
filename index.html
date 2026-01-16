@@ -121,8 +121,12 @@
     <section class="subscribe-section">
         <h2>Graag alles weten over wat we maken?</h2>
         <p>We laten alleen onze mooiste resultaten zien. Geen vervelende spam.</p>
-        <form class="subscribe-form">
-            <input type="email" placeholder="Email Address">
+        <form class="subscribe-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="de5eb819-1722-4add-b52e-bf9ebe7d85de">
+            <input type="hidden" name="from_name" value="De Ruimtemannen Newsletter">
+            <input type="hidden" name="subject" value="Nieuwe Inschrijving Nieuwsbrief">
+            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+            <input type="email" name="email" placeholder="Email Address" required>
             <button type="submit">Schrijf je in</button>
         </form>
     </section>
@@ -138,16 +142,20 @@
     <!-- Footer -->
     <footer class="site-footer">
         <div class="footer-marquee">
-            <span>Tot snel! &nbsp;
+            <span>Tot snel! &nbsp;</span>
         </div>
 
         <div class="footer-cta" id="contact">
             <a href="#book" class="btn-black-large">Neem contact met ons op</a>
-            <form class="contact-form">
-                <input type="text" placeholder="Naam" required>
-                <input type="tel" placeholder="Telefoonnummer">
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Waar kunnen we je mee helpen?" rows="4"></textarea>
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="de5eb819-1722-4add-b52e-bf9ebe7d85de">
+                <input type="hidden" name="from_name" value="De Ruimtemannen Contact Form">
+                <input type="hidden" name="subject" value="Nieuw bericht van website">
+                <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                <input type="text" name="name" placeholder="Naam" required>
+                <input type="tel" name="phone" placeholder="Telefoonnummer">
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Waar kunnen we je mee helpen?" required rows="4"></textarea>
                 <button type="submit">Verstuur</button>
             </form>
         </div>
@@ -160,7 +168,7 @@
             </div>
             <div class="footer-col">
                 <h5>We zijn bereikbaar van</h5>
-                <p>ma - vrij: 09.00 - 18.00</p>
+                <p>ma - vrij: 08.00 - 18.00</p>
                 <p>zat - zon: op afspraak</p>
             </div>
             <div class="footer-col">

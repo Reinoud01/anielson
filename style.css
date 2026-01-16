@@ -273,8 +273,8 @@ a:hover {
     .hero-section {
         min-height: 100vh;
         /* Use full height on desktop for better centering */
-        padding-top: 220px;
-        /* Increased from default 100px to clear larger logo/menu */
+        padding-top: 80px;
+        /* Reduced from 220px to lift content higher and center it more on desktop */
         padding-bottom: 4rem;
     }
 

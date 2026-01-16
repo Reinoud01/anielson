@@ -26,4 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
             navbar.classList.remove('sticky');
         }
     });
+    // Debug Form Submissions
+    document.querySelectorAll('form').forEach(form => {
+        form.addEventListener('submit', () => {
+            console.log('Form submission triggered for:', form.className);
+        });
+    });
 });
