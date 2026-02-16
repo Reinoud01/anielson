@@ -1,3 +1,4 @@
+# Workflow triggered to verify FTP secrets
 name: Deploy Website
 
 on:
