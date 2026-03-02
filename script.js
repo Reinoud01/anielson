@@ -32,4 +32,18 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log('Form submission triggered for:', form.className);
         });
     });
+
+    // Before/After Slider Logic
+    const sliders = document.querySelectorAll('.comparison-slider');
+    sliders.forEach(slider => {
+        const input = slider.querySelector('.slider-input');
+        const imgAfter = slider.querySelector('.img-after');
+        const handle = slider.querySelector('.slider-handle');
+
+        input.addEventListener('input', (e) => {
+            const value = e.target.value;
+            imgAfter.style.clipPath = `inset(0 0 0 ${value}%)`;
+            handle.style.left = `${value}%`;
+        });
+    });
 });
