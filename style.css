@@ -479,7 +479,7 @@ a:hover {
     width: 100%;
     aspect-ratio: 3 / 4;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 0;
 }
 
 .product-image img {
