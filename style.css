@@ -246,13 +246,13 @@ a:hover {
 }
 
 .hero-info {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    font-size: 0.9rem;
-    color: white;
+    font-size: 1.1rem;
+    color: var(--accent-lime);
     font-family: var(--font-body);
-    margin-bottom: 2rem;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+    padding: 0 10px;
 }
 
 .hero-image-container {
@@ -313,8 +313,10 @@ a:hover {
     }
 
     .hero-info {
-        justify-content: flex-start;
-        margin-bottom: 0;
+        margin-left: 0;
+        text-align: left;
+        padding: 0;
+        font-size: 1.2rem;
     }
 }
 
