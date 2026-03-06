@@ -255,6 +255,10 @@ a:hover {
     padding: 0 10px;
 }
 
+.hero-info p {
+    color: var(--accent-lime);
+}
+
 .hero-image-container {
     width: 100%;
     max-width: 600px;
