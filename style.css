@@ -598,6 +598,7 @@ a:hover {
     margin-bottom: 1.5rem;
     text-align: left;
 }
+
 @media (max-width: 768px) {
     .about-content h2 {
         font-size: 2.5rem;
@@ -609,10 +610,15 @@ a:hover {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 2rem;
-    white-space: nowrap;
-    overflow: hidden;
+    white-space: normal;
     color: #2b4f18;
-    /* Darker green tint for contrast */
+    line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+    .footer-marquee {
+        font-size: 2rem;
+    }
 }
 
 .footer-links {
